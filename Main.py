@@ -11,6 +11,7 @@ def display_hash(Hashtable) -> None:
               
         print()
 	
+HashTable = [[] for _ in range(3)]	
 def Hashing(keyvalue) -> int:
 	return keyvalue % len(HashTable)
 
