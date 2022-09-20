@@ -10,16 +10,14 @@ def display_hash(hashtable) -> None:
             print(j, end = " ")
               
         print()
-HashTable = [[] for _ in range(10)]	
 	
-
 def Hashing(keyvalue) -> int:
 	return keyvalue % len(HashTable)
 
-def insert(Hashtable, keyvalue, value) -> None:
+def insert(hashtable, keyvalue, value) -> None:
 	# Write your code here
 	hash_key = Hashing(keyvalue)
-    Hashtable[hash_key].append(value)
+    hashtable[hash_key].append(value)
   
 
 
