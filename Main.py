@@ -10,6 +10,8 @@ def display_hash(hashtable) -> None:
             print(j, end = " ")
               
         print()
+HashTable = [[] for _ in range(10)]	
+	
 
 def Hashing(keyvalue) -> int:
 	return keyvalue % len(HashTable)
